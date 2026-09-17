@@ -1,0 +1,50 @@
+/* WDD 131 portfolio styles — expand throughout the semester */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #f7f7f7;
+}
+
+header,
+main,
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+}
+
+header {
+  background: #0f3c63;
+  color: #fff;
+  max-width: none;
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+main {
+  background: #fff;
+  min-height: 50vh;
+}
+
+footer {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.ai-disclosure {
+  font-size: 0.8rem;
+  color: #666;
+}
