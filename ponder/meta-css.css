@@ -1,4 +1,4 @@
-/* Meta tags and CSS Selectors ponder — WDD 131 */
+/* css selector review */
 
 body {
   background-color: #ddd;
@@ -6,11 +6,9 @@ body {
 }
 
 #content {
-  max-width: 50%;
+  max-width: 60%;
   border: 1px solid darkgrey;
-  /* syntax: border size, type, and color */
   margin: 40px auto;
-  /* syntax first value: top/bottom, second value: left/right */
   padding: 50px;
 }
 
@@ -30,13 +28,12 @@ h1,
 h2,
 p {
   text-align: center;
-  /* text-align works on block-level elements and aligns the text content inside that block */
 }
 
 img {
   width: 50%;
   display: block;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 #topics {
