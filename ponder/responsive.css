@@ -30,6 +30,12 @@ section {
 nav a {
   padding: 20px;
   color: black;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-top: 1px solid gray;
+}
+.hide {
   display: none;
 }
 nav a:hover {
@@ -48,7 +54,18 @@ nav a:hover {
   height: 4px;
   background-color: black;
   margin: 5px 0;
+  transition: 0.4s;
 }
+
+.change .bar1 {
+  transform: translate(0, 8.5px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -8.5px) rotate(45deg);
+}
+
 footer {
   text-align: center;
 }
@@ -63,9 +80,14 @@ footer {
   }
   nav a {
     display: inline;
+    border: none;
   }
   nav {
     text-align: right;
+  }
+  /* Always show the nav on wide screens, even with the hide class on it. */
+  nav.hide {
+    display: block;
   }
 }
 
@@ -79,4 +101,6 @@ footer {
   Generative AI disclosure (CSE policy):
   1. Styles drafted with help from Grok Bot (AI assistant), xAI, October 2, 2026,
   following the WDD 131 W03 Responsive Design ponder video (starter CSS from the course page). Reviewed by Maxim.
+  2. Mobile menu, hide class, and menu button animation styles drafted with help from Grok Bot (AI assistant), xAI,
+  October 7, 2026, following the WDD 131 W04 Responsive Menu ponder video. Reviewed by Maxim.
 */
