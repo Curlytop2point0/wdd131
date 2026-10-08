@@ -1,4 +1,4 @@
-/* Cool Pics part 1 - mobile first styles */
+/* Cool Pics - mobile first styles */
 
 *,
 *::before,
@@ -47,9 +47,17 @@ h1 {
   cursor: pointer;
 }
 
-/* Navigation links are hidden on mobile (JS will toggle them next week) */
+/* Navigation links are hidden on mobile until the menu button is clicked */
 nav {
   display: none;
+}
+
+/* coolpics.js adds the "open" class to show the links as a stacked list */
+nav.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
 }
 
 nav a {
@@ -101,6 +109,45 @@ footer p {
   margin: 0;
 }
 
+/* Image viewer (modal) */
+.gallery img {
+  cursor: pointer;
+}
+
+.viewer {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  overflow: visible;
+}
+
+/* Darkens the page behind the open modal */
+.viewer::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.viewer img {
+  display: block;
+  max-width: 90vw;
+  max-height: 80vh;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Close button sits in the top right corner of the image */
+.close-viewer {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid #222222;
+  background-color: #ffffff;
+  color: #222222;
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* Tablet: two columns */
 @media screen and (min-width: 700px) {
   .gallery {
@@ -114,8 +161,11 @@ footer p {
     display: none;
   }
 
-  nav {
+  /* Links always show in a row on large screens, even if the menu was toggled */
+  nav,
+  nav.open {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin-top: 0.5rem;
   }
@@ -123,9 +173,14 @@ footer p {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .viewer img {
+    max-width: min(80vw, 1000px);
+  }
 }
 
 /*
   Generative AI disclosure (CSE policy):
   1. The CSS (mobile-first layout, menu button and navigation rules, square images with object-fit, and the 700px and 1000px media queries) drafted with help from Grok Bot (AI assistant), xAI, October 2, 2026, following the WDD 131 W03 Cool Pics part 1 prove instructions. Reviewed by Maxim.
+  2. The open menu styles (nav.open), the large-screen nav override, and the image viewer (modal) styles drafted with help from Grok Bot (AI assistant), xAI, October 8, 2026, following the WDD 131 W04 Cool Pics part 2 prove instructions. Reviewed by Maxim.
 */
