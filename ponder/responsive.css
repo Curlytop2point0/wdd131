@@ -96,11 +96,3 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
-/*
-  Generative AI disclosure (CSE policy):
-  1. Styles drafted with help from Grok Bot (AI assistant), xAI, October 2, 2026,
-  following the WDD 131 W03 Responsive Design ponder video (starter CSS from the course page). Reviewed by Maxim.
-  2. Mobile menu, hide class, and menu button animation styles drafted with help from Grok Bot (AI assistant), xAI,
-  October 7, 2026, following the WDD 131 W04 Responsive Menu ponder video. Reviewed by Maxim.
-*/

@@ -75,3 +75,21 @@ ol li {
   width: 140px;
   margin: 2rem auto 0;
 }
+/* Dark theme: script.js adds or removes the "dark" class on the body */
+.dark {
+  color: #fff;
+  background-color: #333;
+}
+
+.dark .mission {
+  background-color: #333;
+  border-color: #aaa;
+}
+
+.dark .university-name {
+  color: #9fd3ec;
+}
+
+.dark .divider {
+  border-top-color: #ddd;
+}

@@ -48,9 +48,3 @@ modal.addEventListener('click', (event) => {
 });
 
 // The Esc key closes the modal automatically because it is opened with showModal()
-
-/*
-  Generative AI disclosure (CSE policy):
-  1. Menu toggle and image modal drafted with help from Grok Bot (AI assistant), xAI, October 8, 2026,
-     following the WDD 131 W04 Cool Pics part 2 prove instructions. Reviewed by Maxim.
-*/

@@ -84,10 +84,8 @@ h2 {
 /* Gallery: one column on mobile */
 .gallery {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1rem;
   justify-items: center;
-  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -178,9 +176,3 @@ footer p {
     max-width: min(80vw, 1000px);
   }
 }
-
-/*
-  Generative AI disclosure (CSE policy):
-  1. The CSS (mobile-first layout, menu button and navigation rules, square images with object-fit, and the 700px and 1000px media queries) drafted with help from Grok Bot (AI assistant), xAI, October 2, 2026, following the WDD 131 W03 Cool Pics part 1 prove instructions. Reviewed by Maxim.
-  2. The open menu styles (nav.open), the large-screen nav override, and the image viewer (modal) styles drafted with help from Grok Bot (AI assistant), xAI, October 8, 2026, following the WDD 131 W04 Cool Pics part 2 prove instructions. Reviewed by Maxim.
-*/

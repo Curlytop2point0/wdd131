@@ -20,9 +20,3 @@ function changeTheme() {
     pageContent.style.fontFamily = "Georgia, serif";
   }
 }
-
-/*
-  Generative AI disclosure (CSE policy):
-  1. JavaScript drafted with help from Grok Bot (AI assistant), xAI, September 26, 2026,
-  following the WDD 131 Computational Thinking ponder video (starter code from the course page). Reviewed by Maxim.
-*/

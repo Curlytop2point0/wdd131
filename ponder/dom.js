@@ -31,9 +31,3 @@ selectElem.addEventListener('change', function(){
   console.log(codeValue);
   document.getElementById(codeValue).style.color = 'red';
 })
-
-/*
-  Generative AI disclosure (CSE policy):
-  1. JavaScript drafted with help from Grok Bot (AI assistant), xAI, September 25, 2026,
-  following the WDD 131 DOM Basics ponder video. Reviewed by Maxim.
-*/

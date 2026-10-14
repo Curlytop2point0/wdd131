@@ -33,9 +33,3 @@ modal.addEventListener('click', (event) => {
     modal.close();
   }
 });
-
-/*
-  Generative AI disclosure (CSE policy):
-  1. modal.js drafted with help from Grok Bot (AI assistant), xAI, October 7, 2026,
-     following the WDD 131 W04 Responsive Gallery with Modals ponder video. Reviewed by Maxim.
-*/

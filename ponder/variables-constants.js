@@ -29,9 +29,3 @@ if (true) {
 }
 console.log(course); //works fine, course is global
 console.log(student); //does not work, can't access a block variable outside the block
-
-/*
-  Generative AI disclosure (CSE policy):
-  1. JavaScript produced with assistance from Grok Bot (Dynamic Web Fundamentals), xAI, September 19, 2026.
-  Aligned to the WDD 131 JS Variables and Constants ponder video. I reviewed and take responsibility for this work.
-*/
