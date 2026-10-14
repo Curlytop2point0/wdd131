@@ -31,3 +31,8 @@ selectElem.addEventListener('change', function(){
   console.log(codeValue);
   document.getElementById(codeValue).style.color = 'red';
 })
+
+/*
+  AI Disclosure: The code in this file was written by Maxim Person with minor assistance from AI.
+  1. JavaScript guidance from AI, Grok Bot, September 25, 2026.
+*/

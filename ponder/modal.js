@@ -33,3 +33,8 @@ modal.addEventListener('click', (event) => {
     modal.close();
   }
 });
+
+/*
+  AI Disclosure: The code in this file was written by Maxim Person with minor assistance from AI.
+  1. JavaScript guidance from AI, Grok Bot, October 7, 2026.
+*/

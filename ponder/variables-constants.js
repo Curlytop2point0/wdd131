@@ -29,3 +29,8 @@ if (true) {
 }
 console.log(course); //works fine, course is global
 console.log(student); //does not work, can't access a block variable outside the block
+
+/*
+  AI Disclosure: The code in this file was written by Maxim Person with minor assistance from AI.
+  1. JavaScript guidance from AI, Grok Bot, September 19, 2026.
+*/

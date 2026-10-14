@@ -15,3 +15,10 @@ function changeTheme() {
         logo.setAttribute('src', 'images/byui-logo-blue.webp');
     }
 }
+
+/*
+  AI Disclosure: The original code in this file was written by Maxim Person.
+  Revisions based on instructor feedback (formatting, CSS cleanup, and structural changes) were made with assistance from AI.
+  1. Code edits and review assisted by Grok Bot, October 14, 2026.
+  2. Original theme-switching JavaScript guidance from AI, Grok Bot, September 26, 2026.
+*/

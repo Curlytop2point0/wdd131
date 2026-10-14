@@ -20,3 +20,8 @@ function changeTheme() {
     pageContent.style.fontFamily = "Georgia, serif";
   }
 }
+
+/*
+  AI Disclosure: The code in this file was written by Maxim Person with minor assistance from AI.
+  1. JavaScript guidance from AI, Grok Bot, September 26, 2026.
+*/

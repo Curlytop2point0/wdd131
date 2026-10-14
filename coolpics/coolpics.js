@@ -48,3 +48,10 @@ modal.addEventListener('click', (event) => {
 });
 
 // The Esc key closes the modal automatically because it is opened with showModal()
+
+/*
+  AI Disclosure: The original code in this file was written by Maxim Person.
+  Revisions based on instructor feedback were made with assistance from AI.
+  1. Code edits and review assisted by Grok Bot, October 14, 2026.
+  2. Original menu toggle and image modal guidance from AI, Grok Bot, October 8, 2026.
+*/
