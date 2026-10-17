@@ -67,7 +67,6 @@ main {
 /* Book article: one column on mobile, details on top */
 .book {
   display: grid;
-  grid-template-columns: 1fr;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -153,3 +152,8 @@ footer p {
     width: 200px;
   }
 }
+
+/*
+  AI Disclosure: The code in this file was written by Maxim Person with minor assistance from AI.
+  1. Code review, accessibility check, and minor fix guidance from AI, Grok Bot, October 17, 2026.
+*/
