@@ -65,9 +65,14 @@ footer {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
-  /* Image spans rows 1 to 6 in the first column; the description gets row 6. */
+  /* Image spans rows 1 through 5 in the first column; the description gets row 6. */
   .movie img {
     grid-row: 1/6;
     grid-column: 1/2;
   }
 }
+
+/*
+  AI Disclosure: The code in this file was written by Maxim Person with minor assistance from AI.
+  1. Code review and comment correction guidance from AI, Grok Bot, October 17, 2026.
+*/
