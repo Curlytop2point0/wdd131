@@ -1,22 +1,22 @@
 // forEach
 const steps = ['one', 'two', 'three'];
 
-// steps.forEach(function (item) {
-//   console.log(item);
-// });
+steps.forEach(function (item) {
+  console.log(item);
+});
 
-steps.forEach(showSteps);
+// steps.forEach(showSteps);
 
-function showSteps(step) {
-  console.log(step);
-}
+// function showSteps(step) {
+//   console.log(step);
+// }
 
 // .map
 let myList = document.querySelector('#myList');
 let stepsHtml = steps.map(listTemplate);
 
-function listTemplate(item) {
-  return `<li>${item}</li>`;
+function listTemplate(step) {
+  return `<li>${step}</li>`;
 }
 
 myList.innerHTML = stepsHtml.join('');
