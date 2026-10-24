@@ -60,3 +60,8 @@ const movies = [
         article.innerHTML = html;
         movieList.appendChild(article);
     });
+
+/*
+  AI Disclosure: The code in this file was written by Maxim Person with minor assistance from AI.
+  1. Code review guidance from AI, Grok Bot, October 23, 2026.
+*/
