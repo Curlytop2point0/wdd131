@@ -22,3 +22,8 @@ articles.forEach((article) => {
   `;
   main.appendChild(articleElement);
 });
+
+/*
+  AI Disclosure: The code in this file was written by Maxim Person with minor assistance from AI.
+  1. Code review and accessibility check guidance from AI, Grok Bot, October 23, 2026.
+*/
