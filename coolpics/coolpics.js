@@ -2,7 +2,11 @@
 const menuButton = document.querySelector('.menu-btn');
 const nav = document.querySelector('nav');
 
-menuButton.addEventListener('click', toggleMenu);
+// Image viewer (modal)
+const gallery = document.querySelector('.gallery');
+const modal = document.querySelector('dialog');
+const modalImage = modal.querySelector('img');
+const closeButton = modal.querySelector('.close-viewer');
 
 function toggleMenu() {
   nav.classList.toggle('open');
@@ -10,14 +14,6 @@ function toggleMenu() {
   const isOpen = nav.classList.contains('open');
   menuButton.setAttribute('aria-expanded', isOpen);
 }
-
-// Image viewer (modal)
-const gallery = document.querySelector('.gallery');
-const modal = document.querySelector('dialog');
-const modalImage = modal.querySelector('img');
-const closeButton = modal.querySelector('.close-viewer');
-
-gallery.addEventListener('click', openModal);
 
 function openModal(e) {
   // Ignore clicks on the gaps between images
@@ -34,6 +30,9 @@ function openModal(e) {
 
   modal.showModal();
 }
+
+menuButton.addEventListener('click', toggleMenu);
+gallery.addEventListener('click', openModal);
 
 // Close modal on button click
 closeButton.addEventListener('click', () => {
