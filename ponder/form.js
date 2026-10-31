@@ -9,7 +9,7 @@ function updateNotesField() {
   const value = travelRange.value;
 
   // Show the travel notes on the form if they are choosing many campuses and require it
-  if (value === 'many') {
+  if (value === "many") {
     notesContainer.hidden = false;
     notes.required = true;
   } else {
@@ -57,14 +57,14 @@ form.addEventListener("submit", function (event) {
   }
 
   // Let the user know if they choose many campuses but didn't put a note that they need to add a note
-  if (type === 'many' && !note) {
+  if (type === "many" && !note) {
     output.textContent = "Please add a travel note";
     return;
   }
 
   //Let the user know if they choose many campus but only had one campus selected that they need to choose at least two campuses
   if (type === "many" && selectedCampuses.length < 2) {
-    output.textContent = "Please select as least two campuses";
+    output.textContent = "Please select at least two campuses";
     return;
   }
 
