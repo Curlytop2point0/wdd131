@@ -85,3 +85,7 @@ form.addEventListener("submit", function (event) {
   form.reset();
   updateNotesField();
 });
+/*
+  AI Disclosure: The code in this file was written by Maxim Person with minor assistance from AI.
+  1. Code review guidance from AI, Grok Bot, October 31, 2026.
+*/
