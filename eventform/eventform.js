@@ -124,3 +124,7 @@ checkedFields.forEach((field) => {
     field.addEventListener("blur", handleFieldEvent);
 });
 form.addEventListener("submit", submitForm);
+/*
+  AI Disclosure: The code in this file was written by Maxim Person.
+  1. Code review guidance from AI, Grok Bot, October 31, 2026.
+*/
