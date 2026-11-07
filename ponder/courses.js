@@ -18,8 +18,8 @@ const aCourse = {
   }
 };
 
-document.querySelector('#courseName').textContent = aCourse.name;
-document.querySelector('#courseCode').textContent = aCourse.code;
+document.querySelector('#course-name').textContent = aCourse.name;
+document.querySelector('#course-code').textContent = aCourse.code;
 document.querySelector('img').setAttribute('src', aCourse.logo);
 document.querySelector('img').setAttribute('alt', aCourse.name);
 document.querySelector('img').style.width = '100px';
@@ -38,9 +38,9 @@ function renderSections(sections) {
   document.querySelector('#sections').innerHTML = html.join("");
 }
 
-document.querySelector('#enrollStudent').addEventListener('click', function () {
-  const sectionNum = document.querySelector('#sectionNumber').value;
+renderSections(aCourse.sections);
+
+document.querySelector('#enroll-student').addEventListener('click', function () {
+  const sectionNum = document.querySelector('#section-number').value;
   aCourse.enrollStudent(sectionNum);
 });
-
-renderSections(aCourse.sections);
