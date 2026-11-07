@@ -10,14 +10,16 @@ const character = {
       renderStats(this);
       if (this.health <= 0) {
         setTimeout(function () {
-          alert("Character died");
+          alert("Character Died");
         }, 50);
       }
     }
   },
   levelUp: function () {
-    this.level++;
-    renderStats(this);
+    if (this.health > 0) {
+      this.level++;
+      renderStats(this);
+    }
   }
 };
 
