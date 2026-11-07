@@ -44,3 +44,6 @@ renderStats(character);
 
 document.querySelector("#attacked").addEventListener("click", attackCharacter);
 document.querySelector("#level-up").addEventListener("click", levelUpCharacter);
+
+/* AI Disclosure: The code in this file was written by Maxim Person.
+   1. Code review guidance from AI, Grok Bot, November 7, 2026. */
