@@ -44,3 +44,6 @@ document.querySelector('#enroll-student').addEventListener('click', function () 
   const sectionNum = document.querySelector('#section-number').value;
   aCourse.enrollStudent(sectionNum);
 });
+
+/* AI Disclosure: The code in this file was written by Maxim Person.
+   1. Code review guidance from AI, Grok Bot, November 7, 2026. */
