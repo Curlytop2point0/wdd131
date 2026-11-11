@@ -77,7 +77,9 @@ function getFieldMessage(field) {
 }
 
 function checkField(field) {
+    field.setCustomValidity("");
     const message = getFieldMessage(field);
+    field.setCustomValidity(message);
     field.classList.toggle("invalid", message !== "");
     document.querySelector(`#${field.id}-error`).textContent = message;
 }
@@ -87,6 +89,7 @@ function handleFieldEvent(event) {
 }
 
 function clearField(field) {
+    field.setCustomValidity("");
     field.classList.remove("invalid");
     document.querySelector(`#${field.id}-error`).textContent = "";
 }
@@ -122,7 +125,9 @@ typeSelect.addEventListener("change", changeType);
 checkedFields.forEach((field) => {
     field.addEventListener("input", handleFieldEvent);
     field.addEventListener("blur", handleFieldEvent);
+    field.addEventListener("invalid", handleFieldEvent);
 });
+form.eventDate.addEventListener("change", handleFieldEvent);
 form.addEventListener("submit", submitForm);
 /*
   AI Disclosure: The code in this file was written by Maxim Person.
