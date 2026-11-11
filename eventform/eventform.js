@@ -132,4 +132,5 @@ form.addEventListener("submit", submitForm);
 /*
   AI Disclosure: The code in this file was written by Maxim Person.
   1. Code review guidance from AI, Grok Bot, October 31, 2026.
+  2. Code review guidance from AI, Grok Bot, November 11, 2026.
 */
