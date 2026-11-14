@@ -1,0 +1,151 @@
+:root {
+  --title-font: "Amatic SC", Arial, sans-serif;
+  --body-font: Arial, Helvetica, sans-serif;
+  --accent-color: #1a7fc1;
+  --border-color: #000;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: var(--body-font);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2 {
+  font-family: var(--title-font);
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page-title img {
+  width: 25%;
+  max-width: 150px;
+}
+
+.page-title h1 {
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+.search {
+  display: flex;
+  margin-top: 1rem;
+  padding: 0.25rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  font-size: 1rem;
+}
+
+.search button {
+  display: flex;
+  padding: 0 0 0 0.5rem;
+  border: none;
+  border-left: 1px solid var(--border-color);
+  background: none;
+}
+
+.search button img {
+  width: 30px;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.recipe-content .tag {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.recipe-content h2 {
+  margin: 1.5rem 0 0;
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+.description {
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.social {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.social img {
+  display: block;
+  width: 32px;
+}
+
+@media screen and (min-width: 700px) {
+  .page-title h1 {
+    font-size: 5rem;
+  }
+
+  .search input {
+    font-size: 1.25rem;
+  }
+
+  .search button img {
+    width: 40px;
+  }
+
+  .recipe {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .recipe-image {
+    width: 50%;
+    align-self: flex-start;
+  }
+
+  .recipe-content h2 {
+    margin-top: 1rem;
+  }
+
+  .description {
+    display: block;
+  }
+
+  footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
