@@ -104,3 +104,8 @@ function searchTraits(item){
 }
 
 console.log(filteredTraits);
+
+/*
+AI Disclosure: The code in this file was written by Maxim Person.
+1. Code review and troubleshooting guidance from AI, Grok Bot, November 20, 2026.
+*/
