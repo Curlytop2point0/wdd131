@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RecipeBook</title>
-  <meta name="description" content="RecipeBook is a collection of delicious recipes you will love, starting with a warm apple crisp.">
+  <meta name="description" content="Search a collection of delicious recipes you will love.">
   <!-- Open Graph (Facebook, LinkedIn, etc.) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="RecipeBook">
-  <meta property="og:description" content="RecipeBook is a collection of delicious recipes you will love, starting with a warm apple crisp.">
+  <meta property="og:description" content="Search a collection of delicious recipes you will love.">
   <meta property="og:url" content="https://curlytop2point0.github.io/wdd131/recipes/">
   <meta property="og:image" content="https://curlytop2point0.github.io/wdd131/recipes/images/social-preview.jpg">
   <!-- X Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="RecipeBook">
-  <meta name="twitter:description" content="RecipeBook is a collection of delicious recipes you will love, starting with a warm apple crisp.">
+  <meta name="twitter:description" content="Search a collection of delicious recipes you will love.">
   <meta name="twitter:image" content="https://curlytop2point0.github.io/wdd131/recipes/images/social-preview.jpg">
   <!-- One favicon (ICO works everywhere) -->
   <link rel="icon" href="favicon.ico">
@@ -24,6 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="recipes.js" defer></script>
 </head>
 <body>
   <header>
@@ -37,27 +38,7 @@
     </form>
   </header>
   <hr>
-  <main>
-    <article class="recipe">
-      <img class="recipe-image" src="images/apple-crisp.jpg" alt="Apple crisp topped with vanilla ice cream in a white bowl" width="750" height="563">
-      <div class="recipe-content">
-        <button type="button" class="tag">dessert</button>
-        <h2>Apple Crisp</h2>
-        <span
-          class="rating"
-          role="img"
-          aria-label="Rating: 4 out of 5 stars"
-        >
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star-empty">☆</span>
-        </span>
-        <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-      </div>
-    </article>
-  </main>
+  <main class="recipe-list"></main>
   <footer>
     <div class="social">
       <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
