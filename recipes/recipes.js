@@ -366,3 +366,8 @@ function init() {
 searchForm.addEventListener('submit', searchHandler);
 
 init();
+
+/*
+AI Disclosure: The code in this file was written by Maxim Person.
+1. Code review and troubleshooting guidance from AI, Grok Bot, November 20, 2026.
+*/
